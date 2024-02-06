@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas: "header header"
+    "lateral productos"
+    "pie pie";
+}
+.cabeza{
+    background-color: grey;
+    grid-area: header;
+    display: grid;
+    place-items: center;
+    height: 50px;
+}
+.lateral{
+    background-color: rgb(231, 225, 225);
+    grid-area: lateral;
+    padding: 10px;
+    
+}
+.lateral ul{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    font-size: small;
+    color: rgb(79, 78, 78);
+}
+.lateral1{
+    display: flex;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.productos{
+    background-color: rgb(231, 225, 225);
+    grid-area: productos;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    place-items: center;
+}
+.pie{
+    background-color: white;
+    grid-area: pie;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.cards{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: white;
+}
+h2{
+    font-size: medium;
+}
+button{
+    width: 200px;
+    background-color: grey;
+    height: 30px;
+    color: white;
+}
+p{
+    font-size: small;
+    color: darkgray;
+}
+h1{
+    color: white;
+}
